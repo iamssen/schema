@@ -22,7 +22,7 @@
           "type": "array",
           "items": {
             "type": "string",
-            "enum": ["dermatology_visit", "shave"]
+            "enum": ["dermatology_visit", "shave", "bath"]
           },
           "minItems": 1,
           "maxItems": 1,
