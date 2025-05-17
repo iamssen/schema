@@ -25,7 +25,7 @@
             "enum": ["dermatology_visit", "shave", "bath"]
           },
           "minItems": 1,
-          "maxItems": 1,
+          "uniqueItems": true,
           "description": "하루동안 있었던 이벤트들"
         }
       },
