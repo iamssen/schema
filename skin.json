@@ -15,6 +15,10 @@
           "minimum": 0,
           "description": "화농이 동반되는 농포의 갯수"
         },
+        "cleanser": {
+          "type": "string",
+          "description": "사용한 세안제"
+        },
         "description": {
           "type": "string"
         },
@@ -36,7 +40,7 @@
           "description": "하루동안 있었던 이벤트들"
         }
       },
-      "required": ["severity", "description"]
+      "required": ["severity", "description", "cleanser"]
     }
   },
   "additionalProperties": false
