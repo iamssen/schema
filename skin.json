@@ -38,6 +38,27 @@
           "minItems": 1,
           "uniqueItems": true,
           "description": "하루동안 있었던 이벤트들"
+        },
+        "test": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "elimination"
+                ]
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "type",
+              "description"
+            ]
+          }
         }
       },
       "required": ["severity", "description", "cleanser"]
