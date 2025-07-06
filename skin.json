@@ -42,21 +42,23 @@
         "test": {
           "type": "array",
           "items": {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "elimination"
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "const": "elimination"
+                  },
+                  "factor": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "type",
+                  "factor"
                 ]
-              },
-              "description": {
-                "type": "string"
               }
-            },
-            "required": [
-              "type",
-              "description"
             ]
           }
         }
